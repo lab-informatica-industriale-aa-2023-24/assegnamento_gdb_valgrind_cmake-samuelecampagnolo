@@ -6,7 +6,8 @@
 void f(void)
 {
 	int* x = malloc(10 * sizeof(int));
-	x[10] = 0;
+	x[9] = 0;// l'array va da 0 a 9
+	free(x); //mancava il free
 }
 
 int main(void)

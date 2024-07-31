@@ -6,7 +6,7 @@
 int main()
 {
 	char *p;
-	p = (char *) malloc(20);
+	p = (char *) malloc(30);//aumento memoria allocata
 
 	char *s = p;
 	for(int n = 0; n < 20; n++) {
@@ -18,5 +18,5 @@ int main()
 		*s = 'A';
 		s++;
 	}
-
+free(p); //libero memoria
 }

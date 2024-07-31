@@ -4,9 +4,9 @@
 long fattoriale(int n)
 {
 	long result = 1;
-	while (n--)
+	while (n>1){
 		result*=n;
-
+                n--} //il decremento va fatto dentro il ciclo non nella condizione
  	return result;
 }
 

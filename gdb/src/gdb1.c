@@ -1,4 +1,4 @@
-// gdb1.c
+//// gdb1.c
 // Calcola la media dei numeri dati in ingresso
 // premete enter dopo ogni numero
 // CTRL-D per terminare l'input
@@ -23,7 +23,7 @@ int main()
 
 	double media;
 	if (numeri > 0) {
-		media = somma/numeri;
+		media = (double)somma/numeri;//correzione: serve convertire il tipo per avere come risultato un double
 		printf("La media è %f\n", media);
 	}
 
